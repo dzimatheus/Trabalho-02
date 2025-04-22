@@ -1,0 +1,23 @@
+package Trabalho2;
+
+public class Banheiro {
+    private Chuveiro chuveiro;
+    private Secador secador;
+    private EscovaEletrica escovaEletrica;
+
+    public Banheiro(Chuveiro chuveiro, Secador secador, EscovaEletrica escovaEletrica){
+        this.chuveiro = chuveiro;
+        this.secador = secador;
+        this.escovaEletrica = escovaEletrica;
+    }
+    public void ligar(){
+        chuveiro.ligar();
+        secador.ligar();
+        escovaEletrica.ligar();
+    }
+    public void desligar(){
+        chuveiro.desligar();
+        secador.desligar();
+        escovaEletrica.desligar();
+    }
+}
