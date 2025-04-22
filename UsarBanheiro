@@ -1,0 +1,26 @@
+package Trabalho2;
+
+public class UsarBanheiro {
+    public static void main(String args[]){
+        Chuveiro chuveiro = new Chuveiro();
+        Secador secador = new Secador();
+        EscovaEletrica escova = new EscovaEletrica();
+        Banheiro banheiro = new Banheiro(chuveiro, secador, escova);
+        System.out.println("Tomando banho:"); 
+        chuveiro.ligar();
+        System.out.println("...30 min");
+        chuveiro.desligar();
+        System.out.println("Arrumar o cabelo");
+        secador.ligar();
+        System.out.println("...10 min");
+        secador.desligar();
+        System.out.println("Escovando os dentes");
+        escova.ligar();
+        System.out.println("...15 min");
+        escova.desligar();
+        System.out.println("3 pessoas no banheiro");
+        banheiro.ligar();
+        System.out.println("Todos sairam do banheiro");
+        banheiro.desligar();
+    }
+}
